@@ -1,5 +1,6 @@
 import React from 'react'
 import Movie from './Movie'
+import Nofound from './Nofound'
 
 const Movies = (props) => {
     const {movies = []} = props
@@ -9,7 +10,7 @@ const Movies = (props) => {
       movies.length ?  movies.map(movie => (
         <Movie key={movie.imdbID} {...movie} />
         ))  
-        : ( <h3>Nothing found</h3> )
+        : ( <Nofound /> )
     }  
     </div>
   )
