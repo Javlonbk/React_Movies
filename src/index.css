@@ -1,0 +1,103 @@
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #101010;
+  }
+  .header, .footer{
+    height: 80px;
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    background-color: black;
+  }
+.header .logo{
+  color: #AC070F;
+  font-size: 2rem;
+
+}
+.footer{
+  color: #fff;
+  justify-content: space-between;
+}
+.main{
+  min-height: calc(100vh - 160px);
+  padding: 50px 75px;
+  box-sizing: border-box;
+}
+.movies{
+ width: 100%;
+  box-sizing: border-box;
+  background-color: #101010;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card-movie{
+  width: 250px;
+  margin: 15px;
+  box-shadow: 0px 0px 3px #999;
+}
+.card-movie .card-movie_image img{
+  width: 100%;
+  height: 250px;
+}
+.card-movie_info{
+  padding: 10px 15px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.card-movie .card-movie_info div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.search-parent{
+  position: relative;
+}
+div input{
+  width: 100%;
+  padding: 15px 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  outline: none;
+  display: block;
+}
+div .btn-search{
+  position: absolute;
+  top: 6px;
+  right: 10px;
+  width: 120px;
+  background-color: #AC070F;
+  border: none;
+  padding: 8px 12px;
+  color: #fff;
+  font-weight:500;
+  font-size: 16px;
+}
+.btn-search:hover{
+  cursor: pointer;
+}
+.loading{
+  color: #fff;
+}
+.categories{
+  display: flex;
+}
+.category{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin-right: 15px;
+}
+.category input{
+  margin-right: 10px;
+}
+.category label{
+  display: block;
+}
